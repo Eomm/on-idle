@@ -1,0 +1,26 @@
+{
+  "name": "on-idle",
+  "version": "1.0.0",
+  "description": "Trigger an onIdle event on nodejs application",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "npm run lint && tap test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eomm/on-idle.git"
+  },
+  "keywords": [],
+  "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eomm/on-idle/issues"
+  },
+  "homepage": "https://github.com/Eomm/on-idle#readme",
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tap": "^14.11.0"
+  }
+}

@@ -1,2 +1,5 @@
 # on-idle
-Trigger an onIdle event on nodejs application
+
+Trigger an `onIdle` event on Node.js applications!
+
+
