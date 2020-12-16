@@ -15,6 +15,9 @@
   "keywords": [],
   "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.19.0"
+  },
   "bugs": {
     "url": "https://github.com/Eomm/on-idle/issues"
   },
