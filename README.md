@@ -13,7 +13,7 @@ The `idle` event is fired no more than 1 time every `throttling`ms and only when
 The check of the limit is performed every `sampleInterval`ms.
 
 ```js
-const onIdle = require('on-idle')
+const onIdle = require('node-on-idle')
 
 const eventEmitter = onIdle()
 eventEmitter.on('idle', function (idleMs) {

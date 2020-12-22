@@ -1,5 +1,5 @@
 {
-  "name": "on-idle",
+  "name": "node-on-idle",
   "version": "1.0.0",
   "description": "Trigger an onIdle event on nodejs application",
   "main": "index.js",
