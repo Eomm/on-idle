@@ -21,8 +21,12 @@ function onIdle (opts) {
     sampleInterval: 1000
   }, opts)
 
-  const timer = setInterval(checkIdle, options.sampleInterval)
-  timer.unref()
+  emitter.once('newListener', function startTimer (event) {
+    if (event === 'idle') {
+      const timer = setInterval(checkIdle, options.sampleInterval)
+      timer.unref()
+    }
+  })
 
   let elu
   let lastTrigger = 0
@@ -33,9 +37,10 @@ function onIdle (opts) {
   function checkIdle () {
     elu = eventLoopUtilization(elu).idle
 
-    if (elu >= options.idleLimit && time() - lastTrigger >= options.throttling) {
+    const now = time()
+    if (elu >= options.idleLimit && now - lastTrigger >= options.throttling) {
       emitter.emit('idle', elu)
-      lastTrigger = time()
+      lastTrigger = now
     }
   }
 }

@@ -28,6 +28,8 @@ const eventEmitter = onIdle({
 })
 ```
 
+The sampling will start when the first listener will be appended to the EventEmitter returned.
+
 ## License
 
 Licensed under [MIT](./LICENSE).
