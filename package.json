@@ -12,7 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/Eomm/on-idle.git"
   },
-  "keywords": [],
   "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
   "license": "MIT",
   "engines": {
@@ -21,6 +20,15 @@
   "bugs": {
     "url": "https://github.com/Eomm/on-idle/issues"
   },
+  "keywords": [
+    "idle",
+    "wait",
+    "busy",
+    "onidle",
+    "event",
+    "eventemitter",
+    "async"
+  ],
   "homepage": "https://github.com/Eomm/on-idle#readme",
   "devDependencies": {
     "standard": "^16.0.3",
